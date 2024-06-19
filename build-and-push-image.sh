@@ -4,6 +4,7 @@ if [[ -z $1 ]]; then
   echo "You must enter a tag as the first argument to this script."
   exit -1
 fi
+tag=$1
 
 # Build the image itself and push it to GitHub.
 docker build -t ghcr.io/csu-cs-melange/alpha-language-image:$tag . --no-cache
