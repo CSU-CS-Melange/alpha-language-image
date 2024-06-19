@@ -11,5 +11,5 @@ docker build -t ghcr.io/csu-cs-melange/alpha-language-image:$tag . --no-cache
 docker push ghcr.io/csu-cs-melange/alpha-language-image:$tag
 
 # Tag the image as being the latest and push that to GitHub also.
-docker tag ghcr.io/csu-cs-melange/alpha-language-image:$tag tag ghcr.io/csu-cs-melange/alpha-language-image:latest
+docker tag ghcr.io/csu-cs-melange/alpha-language-image:$tag ghcr.io/csu-cs-melange/alpha-language-image:latest
 docker push ghcr.io/csu-cs-melange/alpha-language-image:latest
