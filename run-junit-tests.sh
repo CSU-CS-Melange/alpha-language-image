@@ -35,5 +35,7 @@ pushd $ALPHA_REPO_ROOT/tests/$TEST_PACKAGE/
 
 JACOCO_DESTFILE=$JACOCO_PREFIX/jacoco-$REV-$TEST_PACKAGE.exec
 java -javaagent:/opt/jacoco/lib/jacocoagent.jar=destfile=$JACOCO_DESTFILE -cp $bins:$jars org.junit.runner.JUnitCore $@
+exit_code=$?
 
 popd
+exit $exit_code
