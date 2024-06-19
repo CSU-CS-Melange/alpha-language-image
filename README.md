@@ -56,4 +56,4 @@ All test classes in that package should be specified, as the output file will be
 For example, to run the `AlphaAShowTest` and `AlphaCheckProgramTest` tests, run the following:
 ```
 org.junit.runner.JUnitCore alpha.model.tests.AlphaAShowTest alpha.model.tests.AlphaCheckProgramTest
-``
+```
